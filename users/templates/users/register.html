@@ -1,0 +1,18 @@
+{% extends 'todoapp/base.html' %}
+{% load crispy_forms_tags %}
+{% block heading %}
+    <title>Login</title>
+{% endblock heading %}
+
+{% block body %}
+    <div class="container_card">
+        <div class="card">
+            <h1>Login</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-outline-primary" type="submit">Register</button> |
+            </form>
+        </div>
+    </div>
+{% endblock body %}

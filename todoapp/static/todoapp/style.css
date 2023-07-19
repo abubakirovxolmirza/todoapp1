@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #4E4FA6;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navbar{
+    display: flex;flex-direction: row;
+    width: 99vw;
+    justify-content: space-evenly;
+    padding: 20px 5px;
+    background-color: #481EB0;
+    box-shadow: 0 0 10px black;
+    margin: 7px 7px;
+    border-radius: 9px;
+    transition: box-shadow .3s;
+
+}
+
+i{
+    color: white;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+.nav_items{
+    list-style-type: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logout{
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+.container_card{
+    margin: 40px 0 0 610px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    /*box-shadow: #000;*/
+    transition: box-shadow .3s;
+}
+
+.container_card:hover {
+  box-shadow: 0 0 40px black;
+}
+
+.navbar:hover{
+    box-shadow: 0 0 40px black;
+}
+
+.button:hover{
+    box-shadow: 0 0 40px black;
+
+}
+
+.card-img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.todo-card{
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.description{
+    /*text-transform: capitalize;*/
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.form-group {
+      margin-bottom: 20px;
+}
+
+.form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #000000;
+      font-size: 14px;
+}
+
+.form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+}
+
+.form-group input:focus {
+      outline: none;
+      border-color: #6c63ff;
+}

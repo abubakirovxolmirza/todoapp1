@@ -1,0 +1,22 @@
+{% extends 'todoapp/base.html' %}
+{% block heading %}
+    <title>Home page</title>
+{% endblock heading %}
+
+{% block body %}
+    <div class="container_card">
+        <div class="card">
+            {% for todo in todos %}
+                <img class="card-img" src="/media/qrcode_{{ todo.id }}.png">
+                <div class="todo-card">
+
+                    <h3 class="title">{{ todo.title }}</h3>
+                    <p class="description">{{ todo.description }}</p>
+                <div class="card_time">
+                    <span class="deadline">{{ todo.end }}</span>
+                </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock body %}
